@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "ContractorERP",
+    "slug": "contractor-erp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#1B4965"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.contractor.erp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1B4965"
+      },
+      "package": "com.contractor.erp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "scheme": "contractor-erp",
+    "plugins": ["expo-router"]
+  }
+}
