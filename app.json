@@ -24,7 +24,6 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "scheme": "contractor-erp",
-    "plugins": ["expo-router"]
+    "scheme": "contractor-erp"
   }
 }
