@@ -47,13 +47,23 @@ npm run web
 - **React Native** - Cross-platform mobile framework
 - **Expo SDK 52** - Development platform and build tools
 - **TypeScript** - Type-safe development
-- **React Navigation** - Tab and stack navigation
+- **Expo Router** - File-based routing with deep linking
 - **@expo/vector-icons** - Icon library (Ionicons)
 
 ## Project Structure
 
 ```
-├── App.tsx                     # App entry point
+├── app/                        # Expo Router file-based routes
+│   ├── _layout.tsx             # Root layout (SafeAreaProvider, Stack)
+│   └── (tabs)/                 # Tab group
+│       ├── _layout.tsx         # Tab navigator config
+│       ├── index.tsx           # Dashboard (default route)
+│       ├── projects.tsx
+│       ├── clients.tsx
+│       ├── invoices.tsx
+│       ├── time.tsx
+│       ├── schedule.tsx
+│       └── profile.tsx
 ├── src/
 │   ├── components/             # Reusable UI components
 │   │   ├── Avatar.tsx
@@ -65,9 +75,7 @@ npm run web
 │   ├── constants/
 │   │   ├── mockData.ts         # Mock data for all screens
 │   │   └── theme.ts            # Colors, spacing, typography
-│   ├── navigation/
-│   │   └── TabNavigator.tsx    # Bottom tab navigation
-│   └── screens/
+│   └── screens/                # Screen components
 │       ├── ClientsScreen.tsx
 │       ├── DashboardScreen.tsx
 │       ├── InvoicesScreen.tsx

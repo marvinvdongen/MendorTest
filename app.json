@@ -22,6 +22,7 @@
     "web": {
       "bundler": "metro"
     },
-    "scheme": "contractor-erp"
+    "scheme": "contractor-erp",
+    "plugins": ["expo-router"]
   }
 }
